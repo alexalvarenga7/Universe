@@ -22,7 +22,7 @@ export default function useActiveScale(scales) {
                 });
             },
             {
-                threshold: 0.6, // se considera "activa" cuando el 60% de la sección es visible
+                threshold: 0.5, // se considera "activa" cuando el 50% de la sección es visible
             }
         );
 
