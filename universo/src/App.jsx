@@ -13,7 +13,7 @@ function App() {
       <header className="app-header">
         <div className="logo">
           <span className="logo-icon">🌌</span>
-          <span className="logo-text">COSMOS</span>
+          <span className="logo-text">Cosmologia Alex</span>
         </div>
         <nav className="header-nav">
           <a href="#inicio" onClick={(e) => { e.preventDefault(); scrollToIndex(0); }}>Inicio</a>
@@ -65,17 +65,17 @@ function App() {
                 {/* Tamaño formateado */}
                 <div className="scale-info-card">
                   <div className="info-item">
-                    <span className="info-icon">📐</span>
+                    <span className="info-icon"></span>
                     <div>
                       <span className="info-label">Escala</span>
                       <strong className="info-value">{formatEscala(scale.escalaKm)}</strong>
                     </div>
                   </div>
-                  
+
                   {/* Comparación con la escala anterior (si existe) */}
                   {comparacion && (
                     <div className="info-item comparison">
-                      <span className="info-icon">📊</span>
+                      <span className="info-icon"></span>
                       <div>
                         <span className="info-label">Comparación</span>
                         <span className="comparison-text">{comparacion} mayor</span>
@@ -85,13 +85,13 @@ function App() {
                 </div>
 
                 <p className="scale-descripcion">{scale.descripcion}</p>
-                
+
                 <div className="dato-curioso">
-                  <span className="curiosity-icon">💡</span>
+                  <span className="curiosity-icon"></span>
                   <p className="scale-dato">{scale.datoCurioso}</p>
                 </div>
               </div>
-              
+
               {/* Indicador de scroll */}
               {index === 0 && (
                 <div className="scroll-indicator">
@@ -106,8 +106,8 @@ function App() {
 
       {/* Botones de navegación fijos */}
       <div className="nav-buttons">
-        <button 
-          onClick={goPrev} 
+        <button
+          onClick={goPrev}
           disabled={activeIndex === 0}
           className="nav-btn prev"
           aria-label="Sección anterior"
@@ -128,7 +128,7 @@ function App() {
 
       {/* Footer */}
       <footer className="app-footer">
-        <p>© 2024 Cosmos - Explorando el Universo</p>
+        <p>© 2025 Cosmos - Explorando el Universo</p>
       </footer>
     </div>
   );
